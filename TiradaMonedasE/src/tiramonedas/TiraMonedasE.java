@@ -7,7 +7,7 @@ public class TiraMonedasE {
 	public static void main(String[] args) {
 		// las variables a y b servirán para guardar el resultado de la tirada de dos
 		// monedas
-		int a, b;
+		int resultadoA, resultadoB;
 		int contadorCaras = 0, contadorCruces = 0, numTiradas;
 		// las variables contador1 y contador2 servirán para guardar el número de caras
 		// y cruces dobles consecutivas
@@ -24,17 +24,17 @@ public class TiraMonedasE {
 		} while (numTiradas < 1 || numTiradas > 50);
 
 		for (int i = 0; i < numTiradas; i++) {
-			a = (int) (Math.random() * 2);
-			b = (int) (Math.random() * 2);
+			resultadoA = (int) (Math.random() * 2);
+			resultadoB = (int) (Math.random() * 2);
 
-			if (a == 0) {
+			if (resultadoA == 0) {
 				contadorCaras++;
 				tirada1 = "cara";
 			} else {
 				contadorCruces++;
 				tirada1 = "cruz";
 			}
-			if (b == 0) {
+			if (resultadoB == 0) {
 				contadorCaras++;
 				tirada2 = "cara";
 			} else {
@@ -43,8 +43,8 @@ public class TiraMonedasE {
 			}
 			System.out.println("Moneda 1: " + tirada1 + ", Moneda 2: " + tirada2);
 
-			if (a == b) {
-				if (a == 0) {
+			if (resultadoA == resultadoB) {
+				if (resultadoA == 0) {
 					esCaraDoble = true;
 					esCruzDoble = false;
 				} else {
