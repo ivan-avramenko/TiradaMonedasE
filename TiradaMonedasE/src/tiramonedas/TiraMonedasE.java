@@ -1,5 +1,10 @@
 package tiramonedas;
-
+/**
+*
+* @author Ivan Avramenko
+* @version 1.00
+* 
+*/
 public class TiraMonedasE {
 
 	public static void Imprime(int contadorCaras, int contadorCruces, int maximoCarasDoblesConsecutivas,
